@@ -9,6 +9,7 @@ version = "0.1.0"
 
 [dependencies]
 clap = "2.33.3"
+num = "0.4.0"
 
 [package.metadata.nix]
 app = true

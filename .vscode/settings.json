@@ -1,4 +1,9 @@
 {
-    "nixEnvSelector.nixFile": "${workspaceRoot}/shell.nix",
-    "editor.formatOnSave": true
+  "nixEnvSelector.nixFile": "${workspaceRoot}/shell.nix",
+  "editor.formatOnSave": true,
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "rust-analyzer.checkOnSave.command": "clippy",
+  "rust-analyzer.checkOnSave.extraArgs": ["--", "-A", "clippy::needless_return"]
 }

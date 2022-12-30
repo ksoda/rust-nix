@@ -24,6 +24,7 @@
           packages = prev.packages ++ [
             common.pkgs.rust-analyzer
             common.pkgs.cargo-watch
+            common.pkgs.cargo-edit
           ];
         };
       };
